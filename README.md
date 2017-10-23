@@ -20,6 +20,7 @@ Please note that this takes as input the path of the data folder and not paths t
 
 ### Training
 
+```
 usage: train.py [-h] [--datapath DATAPATH] [--optimizer OPTIMIZER]
                 [--batch-size BATCH_SIZE] [--num-epoch NUM_EPOCH]
                 [--learning-rate LEARNING_RATE]
