@@ -1,4 +1,4 @@
-# Hierarchical Character-based LSTM with Max-Pooling Layer
+# CharacterLSTM with word-level Bi-LSTM Relation Extraction Model
 
  * Uses position vectors based on offsets (off1,off2) from each entity 
  * Input form is of form [(word,off1,off2),..]
