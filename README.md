@@ -6,11 +6,6 @@ Implementation of a character-level bi-lstm relation extraction model (Kavuluru 
  * Input form is of form [(word,off1,off2),..]
  * By default, trains and evaluates on ``example_dataset`` directory.
 
-Please note that this takes as input the path of the data folder and not paths to each individual file. A data folder is expected to have the following files: `train_ids.txt`, `dev_ids.txt`, `test_ids.txt`, and `dataset.txt`. Please see the example_dataset directory for an example of the format. More info about the dataset format can be found [here](https://github.com/AnthonyMRios/relation-extraction-rnn#data-format).
-
-
-Note: Depending on the classes in your dataset, lines 105 and 106 in `train.py` must be changes to include them.
-
 ## Required Packages
 - Python 2.7
 - numpy
@@ -21,8 +16,19 @@ Note: Depending on the classes in your dataset, lines 105 and 106 in `train.py` 
 
 ## Usage
 
+Please note that this model takes as input the path of the data folder and not paths to each individual file. A data folder is expected to have the following files: `train_ids.txt`, `dev_ids.txt`, `test_ids.txt`, and `dataset.txt`. Please see the example_dataset directory for an example of the format. 
+
+- More info about the dataset format can be found [here](https://github.com/AnthonyMRios/relation-extraction-rnn#data-format).
+
+- Depending on the classes in your dataset, lines 105 and 106 in `train.py` must be changes to include them.
+
+- To designate negative classes for the purpose of computing F1, see lines 270 in `model.py`.
 
 ### Training and Evaluating
+
+```
+python train.py --datapath=example_dataset
+```
 
 ```
 usage: train.py [-h] [--datapath DATAPATH] [--optimizer OPTIMIZER]
