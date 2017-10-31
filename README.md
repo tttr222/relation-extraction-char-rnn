@@ -63,6 +63,8 @@ optional arguments:
 
 ## Acknowledgements
 
+Please consider citing the following paper(s) if you use this software in your work:
+
 > Ramakanth Kavuluru, Anthony Rios, and Tung Tran. "Extracting Drug-Drug Interactions with Word and Character-Level Recurrent Neural Networks." In Healthcare Informatics (ICHI), 2017 IEEE International Conference on, pp. 5-12. IEEE, 2017.
 
 ```
